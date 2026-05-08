@@ -1,0 +1,18 @@
+{
+  "mode": "mock",
+  "langchain_project": "day22-langsmith-prompt-versioning",
+  "scores": {
+    "v1": {
+      "faithfulness": 0.8817189477189473,
+      "answer_relevancy": 0.01126984126984127,
+      "context_recall": 0.4210614532526297,
+      "context_precision": 0.04723120953977886
+    },
+    "v2": {
+      "faithfulness": 0.8817189477189473,
+      "answer_relevancy": 0.01126984126984127,
+      "context_recall": 0.4210614532526297,
+      "context_precision": 0.04723120953977886
+    }
+  }
+}

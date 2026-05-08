@@ -1,0 +1,51 @@
+[01] [prompt-v2] request_id=req-0001 q=What are the three main types of machine learning?
+[02] [prompt-v1] request_id=req-0002 q=What is overfitting in machine learning?
+[03] [prompt-v1] request_id=req-0003 q=Explain the bias-variance tradeoff.
+[04] [prompt-v2] request_id=req-0004 q=How does regularization prevent overfitting?
+[05] [prompt-v2] request_id=req-0005 q=What is cross-validation?
+[06] [prompt-v2] request_id=req-0006 q=What is backpropagation?
+[07] [prompt-v2] request_id=req-0007 q=What are Convolutional Neural Networks primarily used for?
+[08] [prompt-v1] request_id=req-0008 q=How do LSTM networks address the vanishing gradient problem?
+[09] [prompt-v2] request_id=req-0009 q=What activation functions are commonly used in neural networks?
+[10] [prompt-v1] request_id=req-0010 q=What is the role of pooling layers in CNNs?
+[11] [prompt-v1] request_id=req-0011 q=What is the transformer architecture?
+[12] [prompt-v2] request_id=req-0012 q=What are word embeddings?
+[13] [prompt-v1] request_id=req-0013 q=What is transfer learning in NLP?
+[14] [prompt-v2] request_id=req-0014 q=How does BERT handle language understanding?
+[15] [prompt-v1] request_id=req-0015 q=What is self-attention in transformers?
+[16] [prompt-v2] request_id=req-0016 q=What is GPT and how is it trained?
+[17] [prompt-v2] request_id=req-0017 q=What is instruction tuning?
+[18] [prompt-v1] request_id=req-0018 q=What is RLHF?
+[19] [prompt-v2] request_id=req-0019 q=What is chain-of-thought prompting?
+[20] [prompt-v1] request_id=req-0020 q=What is Retrieval-Augmented Generation?
+[21] [prompt-v1] request_id=req-0021 q=What are the main components of a RAG pipeline?
+[22] [prompt-v2] request_id=req-0022 q=What is dense retrieval?
+[23] [prompt-v1] request_id=req-0023 q=Why is chunking strategy important in RAG?
+[24] [prompt-v2] request_id=req-0024 q=What advanced RAG techniques exist beyond basic retrieval?
+[25] [prompt-v1] request_id=req-0025 q=What are vector databases used for?
+[26] [prompt-v2] request_id=req-0026 q=What is FAISS?
+[27] [prompt-v2] request_id=req-0027 q=How do text embeddings capture semantic meaning?
+[28] [prompt-v2] request_id=req-0028 q=What is HNSW?
+[29] [prompt-v2] request_id=req-0029 q=What is hybrid search in vector databases?
+[30] [prompt-v2] request_id=req-0030 q=What is LangChain?
+[31] [prompt-v2] request_id=req-0031 q=What is LangChain Expression Language (LCEL)?
+[32] [prompt-v1] request_id=req-0032 q=What is LangGraph?
+[33] [prompt-v2] request_id=req-0033 q=What memory types does LangChain support?
+[34] [prompt-v1] request_id=req-0034 q=What are LangChain retrievers?
+[35] [prompt-v2] request_id=req-0035 q=What is LangSmith?
+[36] [prompt-v2] request_id=req-0036 q=What information do LangSmith traces capture?
+[37] [prompt-v1] request_id=req-0037 q=What is the LangSmith Prompt Hub?
+[38] [prompt-v2] request_id=req-0038 q=How does LangSmith help monitor production LLM applications?
+[39] [prompt-v2] request_id=req-0039 q=What are LangSmith datasets used for?
+[40] [prompt-v2] request_id=req-0040 q=What is RAGAS?
+[41] [prompt-v1] request_id=req-0041 q=How does RAGAS compute faithfulness?
+[42] [prompt-v2] request_id=req-0042 q=What is answer relevancy in RAGAS?
+[43] [prompt-v2] request_id=req-0043 q=What is context recall in RAGAS?
+[44] [prompt-v1] request_id=req-0044 q=What is context precision in RAGAS?
+[45] [prompt-v2] request_id=req-0045 q=What inputs does RAGAS evaluation require?
+[46] [prompt-v1] request_id=req-0046 q=What is Guardrails AI?
+[47] [prompt-v1] request_id=req-0047 q=What is PII and why is it important to detect in LLM responses?
+[48] [prompt-v2] request_id=req-0048 q=What does structured output validation ensure?
+[49] [prompt-v2] request_id=req-0049 q=What is Constitutional AI?
+[50] [prompt-v2] request_id=req-0050 q=What are common AI safety concerns with LLMs?
+Summary: v1=19 v2=31

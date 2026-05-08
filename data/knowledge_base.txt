@@ -1,0 +1,94 @@
+Day 22 Knowledge Base (RAG Lab)
+===============================
+
+Machine Learning Basics
+-----------------------
+Machine learning is commonly categorized into three main types:
+1) Supervised learning: learns from labeled examples (input-output pairs).
+2) Unsupervised learning: finds patterns in unlabeled data (e.g., clustering).
+3) Reinforcement learning: learns by interacting with an environment and receiving rewards.
+
+Overfitting happens when a model learns training data too closely, including noise, and performs poorly on new data.
+The bias-variance tradeoff describes the tension between underfitting (high bias) and overfitting (high variance).
+Regularization (such as L1 and L2) adds a penalty term to the objective, discouraging overly complex models.
+Cross-validation (e.g., k-fold) splits data into multiple folds to estimate performance more reliably.
+
+Neural Networks
+---------------
+Backpropagation computes gradients of the loss with respect to model parameters using the chain rule.
+Common activation functions include ReLU, sigmoid, and tanh.
+
+Convolutional Neural Networks (CNNs) are primarily used for grid-like data such as images.
+Pooling layers in CNNs reduce spatial dimensions, lowering computation and adding some translation invariance.
+
+Long Short-Term Memory networks (LSTMs) address the vanishing gradient problem with gating mechanisms
+(input, forget, and output gates) that control information flow.
+
+Transformers and NLP
+--------------------
+The transformer architecture uses self-attention and processes tokens in parallel (introduced in 2017).
+Self-attention lets the model weigh the importance of different tokens relative to each other in a sequence.
+
+Word embeddings represent words as dense vectors where semantically similar words are close in vector space.
+Transfer learning in NLP often means pre-training on large corpora then fine-tuning on downstream tasks.
+
+BERT is a bidirectional transformer trained with masked language modeling (and historically also next sentence prediction).
+GPT is trained autoregressively: predicting the next token given previous tokens over large text corpora.
+Instruction tuning fine-tunes models on instruction-following data to better follow human intent.
+RLHF (Reinforcement Learning from Human Feedback) uses preference data to train a reward model and then optimize a policy.
+
+Chain-of-thought prompting encourages step-by-step reasoning, which can help on multi-step problems.
+Context length refers to how many tokens a model can consider at once; some GPT-4 variants are available with up to 128k tokens.
+
+Retrieval-Augmented Generation (RAG)
+-----------------------------------
+Retrieval-Augmented Generation (RAG) combines an LLM with retrieval from an external knowledge base so the answer can be grounded.
+A basic RAG pipeline has: (1) chunking + embeddings, (2) a vector store, (3) a retriever, (4) a prompt that injects retrieved context,
+and (5) an LLM that generates the final answer.
+
+Dense retrieval uses embedding similarity (vector distance) to find semantically related passages.
+Chunking strategy matters because too-large chunks dilute relevance; too-small chunks can lose necessary context.
+Advanced RAG techniques include reranking, query expansion, multi-hop retrieval, hybrid search, and citation/attribution.
+
+Vector Databases and FAISS
+--------------------------
+Vector databases store embeddings and support similarity search (nearest neighbor retrieval).
+FAISS (Facebook AI Similarity Search) is a library for efficient similarity search over dense vectors.
+Text embeddings map text to vectors that capture semantic meaning so similar texts have nearby vectors.
+
+HNSW (Hierarchical Navigable Small World) is an approximate nearest neighbor indexing method.
+Hybrid search typically combines lexical (keyword/BM25) and vector similarity retrieval.
+
+LangChain and LangSmith
+-----------------------
+LangChain is a framework for building applications with LLMs (chains, tools, agents, retrievers).
+LCEL (LangChain Expression Language) lets you compose chains with runnables using a pipe operator.
+LangGraph is a graph-based orchestration framework for building stateful LLM workflows.
+
+LangChain supports multiple memory types (e.g., conversation buffer, summary memory, and other variants).
+Retrievers in LangChain are components that return relevant documents for a query.
+
+LangSmith is an observability platform for LLM apps: it provides tracing, datasets, evals, and monitoring.
+LangSmith traces can capture inputs, outputs, timings, and intermediate steps like retrieved documents.
+The LangSmith Prompt Hub is used to manage and version prompts (push/pull prompts).
+LangSmith helps monitor production LLM applications by tracking latency, errors, costs (where available), and quality signals.
+LangSmith datasets are curated collections of inputs/expected outputs used for evaluation and regression testing.
+
+RAGAS
+-----
+RAGAS is a framework for evaluating RAG systems.
+Faithfulness measures whether the answer is supported by the retrieved context (groundedness).
+Answer relevancy measures how well the answer addresses the user question.
+Context recall measures whether retrieved contexts contain the information needed for the reference answer.
+Context precision measures how much of the retrieved context is relevant to the question/answer.
+RAGAS evaluation typically needs: question, generated answer, retrieved contexts, and a reference answer.
+
+Guardrails and Safety
+---------------------
+Guardrails AI helps validate and enforce constraints on LLM outputs (e.g., PII redaction, structured JSON).
+PII (Personally Identifiable Information) includes data like emails, phone numbers, SSNs, and credit card numbers.
+Structured output validation ensures an output conforms to a required schema or parseable format (like JSON).
+
+Constitutional AI is an approach that uses a set of principles/constitution to steer model behavior.
+Common AI safety concerns with LLMs include hallucinations, privacy/PII leakage, bias, prompt injection, and misuse.
+
